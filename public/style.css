@@ -1,0 +1,102 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Container for the entire app */
+.container {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Title */
+.container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #f0f0f0;
+}
+
+/* Form styling */
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+input,
+select,
+button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+input::placeholder {
+    color: #aaaaaa;
+}
+
+button {
+    background-color: #4c9aff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #337acc;
+}
+
+/* Expenses list */
+#expensesList > div {
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #4c9aff;
+    transition: transform 0.2s;
+}
+
+#expensesList > div:hover {
+    transform: scale(1.01);
+}
+
+/* Chart styling */
+#expensesChart {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+}

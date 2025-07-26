@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Expenses Tracker</h1>
+
+        <form id="expenseForm">
+            <input type="text" id="title" placeholder="Title..." required>
+            <input type="number" id="amount" placeholder="Amount you spent..." required>
+            <input type="text" id="category" placeholder="Category..." required>
+            <input type="date" id="date" placeholder="Date of the payment..." required>
+            <button type="submit">Add Expense</button>
+        </form>
+        <canvas id="expensesChart" width="400" height="200"></canvas>
+
+        <div id="expensesList"></div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="chart.js"></script>
+</body>
+</html>
