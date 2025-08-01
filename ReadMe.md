@@ -17,15 +17,3 @@ This is a full-stack expense tracking web application built with Node.js, Expres
 - Frontend: HTML, CSS, JavaScript (ES6 Modules)
 - Charts: Chart.js
 
-## Installation
-
-
-```bash
-git clone https://github.com/your-username/expense-tracker.git
-cd expense-tracker
-
-
-Create a .env file in the root directory with the following content:
-
-PORT=5000
-MONGODB_URI=your_mongo_connection_string
